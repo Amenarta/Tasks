@@ -1,13 +1,10 @@
 ﻿/*
 // Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа
 
-void threedigitnum ()
-{ 
-    Console.Write("Введите трехзначное целое число: ");
-    int num = Convert.ToInt32(Console.ReadLine());
+void threedigitnum (int num)
+{     
     int f = num / 10; 
-    int d = f % 10;   
-    
+    int d = f % 10;      
         
     if (num > 999 || num < 100)
         {
@@ -17,7 +14,9 @@ void threedigitnum ()
         Console.Write (num + " -> " + d);
 }
 
-threedigitnum();
+Console.Write("Введите трехзначное целое число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+threedigitnum(num);
 
 //Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
