@@ -1,6 +1,24 @@
 ﻿/*
-//Задача №19: Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+//Задача №19 вар.1: Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
+void Palindrome(int a)
+{
+  int f1 = a/10000;
+  int f2 = (a/1000)%10;
+  int f4 = (a%100)/10;
+  int f5 = a%10;
+
+  if(f1==f5 && f2==f4)
+  {
+      Console.Write("Это палиндром");
+  }
+  else
+    Console.Write("Это палиндром");
+}
+Palindrome(45654);
+
+
+// Задача №19 вар.2:
 bool Palendrome(string text)
 {
   int len = text.Length;
@@ -14,9 +32,8 @@ bool Palendrome(string text)
 }
 
 int phrase()
-{  
-   
-  if (Palendrome(a))
+{     
+  if (Palendrome())
     Console.Write("Это палиндром.");
   else
     Console.Write("Это не палиндромю");
